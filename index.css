@@ -41,7 +41,7 @@ body{
 .navigation li a{
     display: block;
     text-align: center;
-    padding: 12px 14px;
+    padding: 6px 8px;
     color: white;
     text-decoration: none;
 }
