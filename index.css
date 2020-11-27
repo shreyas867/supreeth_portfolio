@@ -4,7 +4,7 @@ body{
     background: black;
     background-size: cover;
 }
-.navigation{
+/* .navigation{
     position: fixed;
     display: flex;
     justify-content: left;
@@ -13,7 +13,7 @@ body{
     flex-wrap: wrap;
     /* background-color:rgba(0,0, 0, 0.4); */
     
-    width: 100%;
+    /* width: 100%;
     height: 70px;
     z-index: 1;
 }
@@ -49,6 +49,238 @@ body{
     background-color: white;
     border-radius: 20px;
     color: black;
+} */ 
+/* .navbar{
+    position: fixed;
+    height: 80px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background:rgba(0,0, 0, 0.4);
+    width: 100%;
+  }
+  
+  .menu{
+    position: absolute;
+    right: 20px;
+  }
+  .menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 10px;
+    transition: color 0.3s;
+   
+    padding: 6px 8px;
+   
+  }
+  .menu a:hover{
+    color: black;
+    background: white;
+    border-radius: 20px;
+  }
+  .header{
+    width: 100%;
+    height: 600px;
+    background: url(bg.png) no-repeat 50% 50%;
+    background-size: cover;
+    margin-top: 80px;
+  }
+  .btn{
+    display: none;
+    position: absolute;
+    right: 20px;
+  }
+  .btn:hover > span{
+    background: white;
+  }
+  .btn span{
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: white;
+  }
+  p{
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+  
+  }
+  @media only screen and (max-width : 600px) {
+    .navbar{
+      overflow: visible;
+    }
+    .menu{
+      width: 100%;
+      right: 0;
+      top: 80px;
+      background:white;
+      overflow: hidden;
+      max-height: 0;
+    }
+    .menu a{
+      display: block;
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+      color: #000;
+    }
+    
+    .btn{
+      display: block;
+      cursor: pointer;
+    }
+    .show{
+      max-height: 500px;
+    }
+  } */
+  header {
+  
+}
+
+.content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color:rgba(0,0, 0, 0.4); */
+    
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+    /* display: flex;
+    justify-content: left;
+    list-style: none;
+    margin-right: 15%;
+    list-style-type: none;
+    background-color:rgba(0,0, 0, 0.4);
+    overflow:hidden;
+    list-style-type: none;
+    padding:10px;
+    margin:0;
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 0px;
+    transition: 1s;
+    */
+    line-height: 60px;
+    list-style: none;
+    background: black;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 0px;
+    /* transition: 1s; */
+}
+
+nav.black ul {
+    background: black;
+}
+
+nav ul li {
+    display: inline-block;
+    padding:4px 10px;
+   
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 6px 8px;
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+          overflow: scroll;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 0px;
+          text-align: center;
+          margin-top: 1px;
+        
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
 }
 .box{
     width: 270px;
@@ -113,7 +345,7 @@ body{
     color: #dd2a7b;;
 }
 .box .fa-linkedin-in{
-    color:#0072b1;
+    color:#27242e;
 } 
 #id-card{
     background:#696969;
@@ -225,7 +457,7 @@ body{
 .timeline-area-text h1{
     font-size: 50px;
 }
-#summary, #internship, #Skills, #awards, #goals{
+#summary, #internship, #Skills, #awards{
     background: #262626;
     
     
@@ -234,6 +466,7 @@ body{
 .about-area .about-text{
     width: 65%;
     height: 80%;
+    text-align: justify;
 }
 
 .about-area .about-text h1{
@@ -242,7 +475,7 @@ body{
 .about-area .about-text p{
     font-size: 24px;
     line-height: 50px;
-    text-align:justify;
+    text-align: justify;
 }
 
 .about-area .about-text ul li{
@@ -343,11 +576,12 @@ body{
 }
 @media (max-width:858px){
     #container{
-     font-size:small;   
+     
         
     }
     
 }
+
 .contact a{
 
     text-decoration: none;
@@ -412,6 +646,6 @@ body{
 footer {
     text-align: center;
     padding: 3px;
-    background-color: black;
+    background-color: ;
     color: white;
   }
