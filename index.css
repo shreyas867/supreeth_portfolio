@@ -4,6 +4,9 @@ body{
     background: black;
     background-size: cover;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* .navigation{
     position: fixed;
     display: flex;
