@@ -3,14 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
    
     <script src="https://kit.fontawesome.com/a54284ff60.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
+
+
+
+
     <div id="container">
-    <nav class="navigation">
+        <!-- <nav class="navbar">
+          
+            <a class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            </a>
+            <div class="menu">
+                <a href="#about">About me</a>
+                <a href="#summary">Professional Summary</a>
+                <a href="#timeline">Academics</a>
+                <a href="#internship">Internships</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#workshop">Workshop</a>
+                <a href="#awards">Awards</a>
+                <a href="#interests">Hobbies</a>
+                <a href="#goals">Goal</a>
+                <a href="#contacts">Contact Me</a>
+            </div>
+        </nav>   -->
+        <header>
+
+            <nav>
+
+                  <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                  </div>
+
+                 
+                  <div class="menu">
+                        <ul>
+                        <li>    <a href="#about">About me</a></li>
+                        <li>   <a href="#summary">Professional Summary</a></li>
+                            <li> <a href="#timeline">Academics</a></li>
+                                <li>  <a href="#internship">Internships</a></li>
+                                    <li>    <a href="#projects">Projects</a></li>
+                                        <li>  <a href="#skills">Skills</a></li>
+                                            <li>  <a href="#workshop">Workshop</a></li>
+                                                <li> <a href="#awards">Awards</a></li>
+                                                    <li>  <a href="#interests">Hobbies</a></li>
+                                                        <li>  <a href="#goals">Goals</a></li>
+                                                            <li> <a href="#contacts">Contact Me</a></li>
+                        </ul>
+                  </div>
+            </nav>
+
+      </header>
+    <!-- <nav class="navigation">
+        
     <ul>
         <li><a href="#about">About me</a></li>
         <li><a href="#summary">Professional Summary</a></li>
@@ -21,10 +75,11 @@
         <li><a href="#workshop">Workshop</a></li>
         <li><a href="#awards">Awards</a></li>
         <li><a href="#interests">Hobbies</a></li>
-        <li><a href="#goals">Goals</a></li>
+        <li><a href="#goals">Goal</a></li>
         <li><a href="#contacts">Contact Me</a></li>
+       
     </ul>
-    </nav>
+    </nav> -->
 
         <section id=id-card>
         <div class="box">
@@ -377,7 +432,7 @@
                                       <div class="contact-list"><i class="fas fa-phone" aria-hidden="true"></i><br>
                                         <p style="font-size: 20px;  margin-left:30px; margin-top: 5px;">+91 9886584668</p> </div>
          
-        </div>
+            </div>
     </section>
     </section>
     
@@ -385,7 +440,30 @@
     <footer>
         <p>Copyright &copy; 2020<br>
       </footer>
-    
+    </div>
+    <script type="text/javascript">
 
+        // Menu-toggle button
+  
+        $(document).ready(function() {
+              $(".menu-icon").on("click", function() {
+                    $("nav ul").toggleClass("showing");
+              });
+        });
+  
+        // Scrolling Effect
+  
+        $(window).on("scroll", function() {
+              if($(window).scrollTop()) {
+                    $('nav').addClass('black');
+              }
+  
+              else {
+                    $('nav').removeClass('black');
+              }
+        })
+  
+  
+        </script>
 </body>
 </html>
